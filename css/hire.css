@@ -1,0 +1,98 @@
+body{
+    background-image: url(/images/1.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+ul {
+    float: right;
+}
+ul li{
+    list-style: none;
+    padding: 0em 1em;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    transition: 0.5s;
+    background: gold;
+    display: block;
+}
+ul li:hover::after{
+    width: 100%;
+}
+li a:hover{
+    color: gold;
+}
+.wrap{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 2.6em;
+}
+.wrap span{
+    color: gold;
+}
+button {
+    padding: 0.9em 2em;
+    border: 2px solid gold;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #ddd;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color:gold;
+    
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(55deg);
+    background: gold;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 110%;
+   }
+   
+   button:hover {
+    color: #111;
+   }
+.box{
+    color: white;
+    padding: 1.8em 2em;
+    margin: 0.5em;
+    font-weight: bolder;
+    box-sizing: border-box;
+    width: 70%;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 3em;
+}
+   

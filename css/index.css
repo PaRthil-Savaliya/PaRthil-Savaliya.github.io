@@ -1,0 +1,526 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#index{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/java/new7.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+
+.sec1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    top: 30%;
+    left: 5%;
+    position: absolute;
+    text-transform: capitalize;
+}
+.sec1 h1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.sec1 span{
+    color: gold;
+    font-weight: bolder;
+} 
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: 50%;
+ 
+   }
+   
+   button:hover {
+    background-color: #e5e22e;
+    box-shadow: 0px 15px 20px rgba(229, 226, 46, 0.514);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+   button:active {
+    transform: translateY(-1px);
+   }
+   button a{
+    color: black;
+    text-decoration: none;
+   }
+   button a:hover{
+    color: black;
+    text-decoration: none;
+   }
+   @media screen and (max-width:600px) {
+    .sec1{
+        position:absolute; 
+        top: 25%;
+        left: 15%;  
+    }
+    .nav1 h2{
+        padding: 5px;
+        font-size: 2em;
+    }
+  
+    .wrapper{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+   }
+
+   #about{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/java/black-gold-marble.jpg);
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+    background-position: center;
+    
+}
+.h1{
+    color:white;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.h2 span{
+    color: gold;
+    font-weight: bolder;
+}
+.box{
+    box-sizing: border-box;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+img:hover{
+    box-shadow: 20px 15px 20px rgba(229, 226, 46, 0.514);
+    transition: 0.5s;
+   
+}
+.box{
+    position: relative;
+    left: 20%;
+   
+}
+.box1{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    right: 10%;
+    top: 20%;
+    
+}
+@media screen and (max-width:668px) {
+    .box1{
+        position: relative;
+        left: 10%;
+        width: 90%;
+        top: 2%;
+    }
+    
+    .box1 button{
+        width: 60%;
+    }
+    .box{
+        width: 100%;
+        position: relative;
+        left: 10%;
+    }
+    #about{
+        padding: 20px;
+        height: 150vh;
+        
+    }
+    .box2{
+        margin: 10px;
+    }
+   
+    .form1{
+        margin: 10px;
+    }
+    .box6{
+        margin: 10px;
+    }
+   .box3{
+       box-sizing: border-box;
+        margin-right: 100px;
+   }
+
+}
+@media screen and (min-width:600px) {
+    #service{
+        
+        height: 100vh;
+    }
+    #about{
+        height: 100vh;
+    }
+    #skill{
+        height: 100vh;
+    }
+    #contact{
+        height: 100vh;
+    }
+        
+}
+
+@media screen and(max-width:400px) {
+    #service{
+        height: 210vh;
+    }
+}
+#service{
+     
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/java/46.jpg);
+        background-size: cover;
+        background-position: center;
+}
+.box2{
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    background-color:  rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding:1em 1.2em;
+    position: relative;
+    left: 3%;
+    
+}
+.box2 h1{
+    font-size: 2em;
+    font-weight: bolder;
+   
+}
+.box2:hover{
+    color: black;
+    background-color:gold;
+    box-shadow: 0px 15px 20px rgba(229, 226, 46, 0.514);
+    transition: 1s ;
+    transform: scale(0.9);
+}
+.form-group{
+    color: white;
+}
+input{
+    width: 100%;
+}
+
+input[type=range]{
+    -webkit-appearance: none;
+    
+}
+input[type=range]::-webkit-slider-thumb{
+ -webkit-appearance: none; 
+}
+input[type=range]::-webkit-slider-thumb{
+ -webkit-appearance: none;
+ border: none;
+ height: 25px;
+ width: 16px;
+ border-radius: 50% 30%;
+ background:rgb(241, 78, 133) ;
+ margin-top: -7px;
+}
+input[type=range]:focus{
+ outline: none;
+ 
+}
+input[type=range]:focus::-webkit-slider-runnable-track{
+    background: cyan;
+}
+input[type=range]::-webkit-slider-runnable-track{
+ background: rgb(238,174,202);
+ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 10px;
+    border:none
+}
+.box3{
+ box-sizing: border-box;
+ width: 100%;
+ padding: 20px 25px;
+ position: relative;
+ left: 0%;
+}
+.box3 button{
+    width: 50%;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box4{
+
+ box-sizing: border-box;
+ width: 100%;
+ background-color:rgba(0, 0, 0, 0.3);
+ text-transform: capitalize;
+ border-radius: 10px;
+ padding: 30px 30px;
+}
+
+
+.box3 h3{
+    color: white;
+    font-size: 25px;
+}
+.box3 p{
+    color: rgb(185, 168, 168);
+}
+#skill{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(/java/code-coder-coding-computer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.box6{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+}
+.box5{
+    padding: 10px;
+}
+.box5 img{
+    width: 20%;
+    height: 20%;
+}
+.box5:hover{
+    background-color: #fddf17;;
+    box-shadow: 20px 15px 20px rgba(255, 252, 46, 0.514);
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    transform: scale(0.8);
+    transition: 1s;
+}
+#team{
+    background-color: black;
+    padding: 30px;
+    text-transform: capitalize;
+}
+#btn12{
+    color: gold;
+    background-color: black;
+}
+#btn12:hover{
+    background-color: white;
+    color: black;
+}
+#contact{
+    background-image: url(/java/circle-scatter-haikei.png);
+  background-size: cover; 
+  padding: 20px;
+}
+
+.form1 button{
+    background-color: gold;
+    font-weight: bolder;
+    border-radius:10px ;
+    border: transparent;
+    text-transform: uppercase;
+    width: 100%;
+ 
+}
+.form1 button:hover{
+    color: #000;
+    box-shadow: 0px 15px 20px rgba(255, 252, 46, 0.514);
+}
+
+
+.form1{
+    background-color:rgba(0,0,0,0.7);
+    padding: 15px 14px;
+    border-radius: 20px;
+   color: white;
+}
+
+  
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    /*left: -100%;*/
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 1;
+    transition: all 0.6s ease-in-out;
+  }
+  #active:checked ~ .wrapper{
+    /*left: 0;*/
+    right:0;
+  }
+  .menu-btn{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    /*left: 20px; */
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    /* color: #fff; */
+    background: gold;
+    /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%); */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-btn span,
+  .menu-btn:before,
+  .menu-btn:after{
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 30%;
+      width: 40%;
+      border-bottom: 2px solid #000;
+      transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .menu-btn:before{
+    transform: translateY(-8px);
+  }
+  .menu-btn:after{
+    transform: translateY(8px);
+  }
+  
+  
+  .close {
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      transition:  .6s;
+      
+  }
+  
+  /* closing animation */
+  #active:checked + .menu-btn span {
+      transform: scaleX(0);
+  }
+  #active:checked + .menu-btn:before {
+      transform: rotate(45deg);
+    border-color: #fff;
+  }
+  #active:checked + .menu-btn:after {
+      transform: rotate(-45deg);
+    border-color: #fff;
+  }
+  .wrapper ul{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+   
+  }
+  
+  .wrapper ul li{
+    height: 10%;
+    margin: 15px 0;
+    z-index: 1111;
+  }
+  .wrapper ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    line-height: 50px;
+    margin: 5px 30px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .wrapper ul li :after{
+    display: block;
+    content: "";
+    background: gold;
+     /*background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);*/
+    /*background: linear-gradient(375deg, #1cc7d0, #2ede98);*/
+    width: 0;
+    height: 3px;
+    transition:0.5s;
+  }
+   
+  .wrapper a{
+      color: white;
+  }
+  .wrapper ul li a:hover:after{
+    width: 100%;
+  }
+  .wrapper ul li a:hover{
+    color: gold;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+  
+  
+  #active:checked ~ .wrapper ul li a{
+    opacity: 1;
+  }
+  .wrapper ul li a{
+    transition: opacity 1.2s, transform 1.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateX(100px);
+  }
+  #active:checked ~ .wrapper ul li a{
+      transform: none;
+      transition-timing-function: ease, cubic-bezier(.1,1.3,.3,1); /* easeOutBackを緩めた感じ */
+     transition-delay: .6s;
+    transform: translateX(-100px);
+  }
+  @media screen  and(max-width:600px) 
+    {
+      .ft1{
+          position: relative;
+          top: 20%;
+      }
+  }
+ 

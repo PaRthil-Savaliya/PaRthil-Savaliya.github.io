@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<script src="java/jquery.min.js"></script>
+  
+  
+
+<script>
+    $(document).ready(function(){
+        $(".btn1").click(function(event){
+            event.preventDefault();
+            fn = document.getElementById("p1").value;
+            ln = document.getElementById("lname").value;
+            mno= document.getElementById("mno").value;
+            mn = /^[0-9]+$/;
+            fn1 = /^[a-z A-Z]+$/;
+            if(fn.length==0)
+            {
+                alert("ENTER FIRST NAME");
+                document.getElementById("p1").focus();
+                return false;
+            }
+            else if(fn.match(mn))
+            {
+                alert("ENTER VALID FIRSTNAME");
+                document.getElementById("p1").focus()
+                return false;
+            }
+            else if(ln.length==0)
+            {
+                alert("ENTER LAST NAME");
+                document.getElementById("lname").focus();
+                return false;
+            }
+            else if(ln.match(mn))
+            {
+                alert("ENTER VALID LAST NAME");
+                document.getElementById("lname").focus()
+                return false;
+            }
+            else if(mno.length==0)
+            {
+                alert("ENTER MOBILE NO");
+                document.getElementById("mno").focus();
+                return false;
+            }
+            else if(mno.length != 10)
+            {
+                alert("MOBILE NO MUST BE 10 DIGITS");
+                document.getElementById("mno").focus()
+                return false;
+            }
+            else{
+                $(".form1").fadeOut("slow");
+                $("h5").text("THANK YOU FOR SUBMITTING THE FORM")
+            }
+        });
+    });
+</script>
+
+<body>
+    <section id="index">
+        <div class="container-fluid">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+               <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+             </head>
+           
+             <body>
+                <div class="nav1">
+                    <H2 style="color: white; font-weight: bolder; padding: 10px;font-size: 2.5em;">Personal <span style="color: gold;">Blog!</span></H2>
+                    <input type="checkbox" id="active">
+                    <label for="active" class="menu-btn"><span></span></label>
+                    <label for="active" class="close" ></label>
+                    <div class="wrapper">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Services</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#Team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </div>
+                    
+                    </script>
+                </div>
+                <div class="sec1">
+                    <h3>Hello my name is </h3>
+                    <h1>PaRthil  Savaliya</h1>
+                    <h2>and i'm a <span>Web-devloper</span> </h2><br>
+                    <button class= "btn-md"><i class="fa fa-handshake" aria-hidden="true" style="font-size: 15px;color: black;margin-right: 5px;"></i><a href="hire.html" target="_blank">Hire Me</a></button>
+                </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid">
+            <h1 class="h1"style="color: white;font-weight:bold;">About Me </h1>
+            <h2 class="h2"><span>Who I am</span></h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="box">
+                        <img src="images/115.png"  alt="Personal introduction">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="box1">
+                        <h2 style="font-size: 40px;font-weight: bolder;">I'm <span style="color: gold;"> PaRthil Savaliya</span> and I'm</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis temporibus quae nisi corrupti quasi quibusdam veritatis consectetur impedit, aliquam, ut incidunt non exercitationem? Harum, modi cupiditate consequatur deleniti, non ratione laboriosam error iste maiores hic aperiam, beatae magnam placeat optio corrupti eligendi laborum praesentium. Quo fugit vel iste omnis ipsam?</p>
+                        <button type="button"><i class="fa fa-download" style="font-size: 15px;color: black;margin-right: 5px;"></i><a href="cv.html" target="_blank" download>Download Cv</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section id="service">
+        <div class="container-fluid"><br><br>
+            <h1 class="h1" style="color: white;font-weight:bold;text-transform: capitalize;"><span> my</span> services</h1>
+            <h2 class="h2"><span>What I provide</span></h2>
+        </div><br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                 <!-- <a href="#" style="text-decoration: none;"> -->
+                 <div class="box2" id="box2" >
+                     
+                    <span style="font-size:50px;"><i class="fa fa-briefcase"></i></span>
+                    <h1>Advertising</h1>
+                    <p>Advertising is the techniques and practices used to bring products, services, opinions, or causes to public notice to persuade the public to respond in a certain way toward what is advertised.</p>
+                    <button type="button" id="btn12" onclick="p()">Know More<i class="fa fa-arrow-right" style="margin-left: 10px;font-size:15px;"></i></button>
+                 </div>
+                 </a>
+                </div>
+ 
+                <div class="col-sm-4">
+                 <!-- <a href="index.html" style="text-decoration: none;"> -->
+                 <div class="box2" id="box3">
+                 <span style="font-size:50px;"><i class="fa fa-code"></i></span>
+                 <h1>Web Development</h1>
+                 <p>Web development is the work involved in developing a website for the Internet Among Web professionals, "Web development" usually refers to the main non-design aspects of building Web sites: writing markup and coding.</p>
+                 <button type="button" id="btn12" onclick="p1()">Know More<i class="fa fa-arrow-right" style="margin-left: 10px;font-size:15px;"></i></button>
+                 </div>
+                 </a>
+                 </div>
+                <div class="col-sm-4">
+                 <!-- <a href="index.html" style="text-decoration: none;">    -->
+                 <div class="box2" id="box4">
+                 <span style="font-size:50px;"><i class="fa fa-gamepad"></i></span>
+                 <h1>Software Development</h1>
+                 <p>Software development refers to a set of computer science activities dedicated to the process of creating, designing and supporting software Office productivity suites data management software, media players are examples.</p>
+                 <button type="button" id="btn12" onclick="p2()">Know More<i class="fa fa-arrow-right" style="margin-left: 10px;font-size:15px;"></i></button>
+                </div>
+                </a>
+                </div>
+            </div>
+         </div>
+        </div>
+        <script>
+            function p() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("box2").innerHTML =
+                        this.responseText;
+                    }
+                };
+                xhttp.open("GET", "advertising.txt", true);
+                xhttp.send();
+            }
+            function p1() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("box3").innerHTML =
+                        this.responseText;
+                    }
+                };
+                xhttp.open("GET", "advertising.txt", true);
+                xhttp.send();
+            }
+            function p2() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("box4").innerHTML =
+                        this.responseText;
+                    }
+                };
+                xhttp.open("GET", "advertising.txt", true);
+                xhttp.send();
+            }
+        </script>
+    </section> 
+    <section id="skill">
+        <div class="container-fluid"><br><br>
+            <h1 class="h1" style="color: white;font-weight:bold;">My Skills </h1>
+            <h2 class="h2" style="text-transform: capitalize;"><span>What i know</span></h2>
+        </div><br>
+        <div class="container-fluid">
+            <div class="row" >
+                <div class="col-sm-5" style="margin: 10px;">
+                    <div class="box3">
+                        <h3>My creative skills & experiences.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nihil deserunt consectetur. Dolore optio cumque maxime odit provident illum distinctio beatae repellat, officia qui mollitia itaque totam numquam adipisci rem!</p>
+                        <button class= "btn-md"><i class="fas fa-graduation-cap" aria-hidden="true" style="font-size: 15px;color: black;margin-right: 5px;"></i><a href="cv.html" target="_blank">Know More</a></button>
+                    </div>
+                </div>
+                <div class="col-sm-5" style="margin: 10px;">
+                    <div class="box4">
+                        <h2 style="font-size: 15px;color: white;font-weight: bolder;">HTML :-</h2>
+                        <div class="progress">
+                          <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;color:black;font-weight: bolder;font-size: 15px;font-family: cursive;background-color: orangered;">
+                            90%
+                          </div>
+                        </div>
+                        <h1 style="font-size: 15px;color: white;font-weight: bolder;">CSS :-</h1>
+                        <div class="progress">
+                          <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;color:black;font-weight: bolder;font-size: 15px;font-family: cursive;background-color: orangered;">
+                            80%
+                          </div>
+                        </div>
+                        <h1 style="font-size: 15px;color: white;font-weight: bolder;">JAVA SCRIPT :-</h1>
+                        <div class="progress">
+                          <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;color:black;font-weight: bolder;font-size: 15px;font-family: cursive;background-color: orangered;">
+                            60%
+                          </div>
+                        </div>
+                        <h1 style="font-size: 15px;color: white;font-weight: bolder;">JQUERY :-</h1>
+                        <div class="progress">
+                          <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;color:black;font-weight: bolder;font-size: 15px;font-family: cursive;background-color: orangered;">
+                            70%
+                          </div>
+                        </div>
+                        <h1 style="font-size: 15px;color: white;font-weight: bolder;">Php :-</h1>
+                        <div class="progress">
+                          <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:65%;color:black;font-weight: bolder;font-size: 15px;font-family: cursive;background-color: orangered;">
+                            65%
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section id="project">
+        <link rel="stylesheet" href="css/project.css">
+        <div class="container-fluid">
+            <h2 style="color: white;font-weight:bolder;text-align:center;font-size: 35px;padding: 10px;">Our <span> Projects</span></h2>  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators" style="padding: 5px;">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" style="width: 100%;">
+                <div class="item active">
+                  <img src="java/photo3.png" alt="Los Angeles" style="width:100%;">
+                </div>
+          
+                <div class="item">
+                  <img src="java/photo2.png" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="java/photo1.png" alt="New york" style="width:100%;">
+                </div>
+                <div class="item">
+                    <img src="java/photo5.png" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="java/photo4.png" alt="New york" style="width:100%;">
+                  </div>
+              </div>
+          
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <h2 style="color: white;font-weight:bolder;text-align:center;font-size: 35px;padding: 10px;">Ragistration Forms</h2>  
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators" style="padding: 5px;">
+                  <li data-target="#myCarousel" data-slide-to="5" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="6"></li>
+                  <li data-target="#myCarousel" data-slide-to="7"></li>
+                  <li data-target="#myCarousel" data-slide-to="8"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" style="width: 100%;">
+                  <div class="item active">
+                    <img src="java/photo6.jpg" alt="Los Angeles" style="width:100%;">
+                  </div>
+            
+                  <div class="item">
+                    <img src="java/photo7.png" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="java/photo8.jpg" alt="New york" style="width:100%;">
+                  </div>
+                  <div class="item">
+                      <img src="java/photo9.jpg" alt="Chicago" style="width:100%;">
+                    </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container-fluid">
+            <h1 class="h1" style="color: white;font-weight:bold;">My <span style="color: gold;"> team</span></h1>
+            <div class="box6">
+                <div class="box5">
+                    <img src="images/111.jpg" class="rounded-circle"  alt="team1">
+                    <h2>Arjun Koshiya</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur </p>
+                </div>
+                <div class="box5">
+                    <img src="images/112.jpg" class="rounded-circle" alt="team1">
+                    <h2>Yash Kheni</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur  </p>   
+                </div>
+                <div class="box5">
+                    <img src="images/113.jpg" class="rounded-circle" alt="team1">
+                    <h2>Ayush Donda</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur  </p>   
+                </div>
+                <div class="box5">
+                    <img src="images/114.jpg"  class="rounded-circle" alt="team1">
+                    <h2>Jetal Savani</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur  </p>   
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h1" style="color: white;font-weight:bold;"> <span style="color: gold;">Get in</span> Touch</h1><br><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form1">
+                    <form action="#" name="form1" class="was-validated" >
+                        <div class="form-check-lable container-fluid">
+                            <label for="first name" class="text-white">FIRST NAME</label>
+                            <input type="text" class="form-control" placeholder="ENTER FIRST NAME" id="p1" name="fname">
+                            <label for="last name" class="text-white">LAST NAME</label>
+                            <input type="text" class="form-control" placeholder="ENTER LAST NAME" id="lname">
+                        </div>
+                        <div class="container-fluid">
+                           <label for="email" class="text-white">EMAIL</label>
+                           <input type="email" class="form-control" placeholder="ENTER EMAIL ID" id="email"required>
+                        </div>
+                        <div class="container-fluid">
+                            <label for="mobile_no" class="text-white">MOBILE NO</label>
+                            <input type="number" class="form-control" placeholder="ENTER MOBILE NO" id="mno">
+                         </div><br>
+                         <div class="container-fluid">
+                            <button type="submit"class="btn1" >support now</button> 
+                         </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form1">
+                    <h4 >Address </h4>
+                        <i class="fa fa-home" style="margin-right: 8px;"></i> 20 krushnakunj society motavarachha surat-394101
+                        <h4>contact no</h4>
+                        <i class="fa fa-phone" style="margin-right: 8px;"></i>+91 7990553100
+                        <h4>Email</h4>
+                        <i class="fa fa-envelope" style="margin-right: 8px;"></i>parthilsavaliya3132@gmail.com
+                        <h4>Find Us On</h4>
+                        
+                        <a href="https://www.instagram.com/parthil__20/"><i class="fab fa-instagram" style="padding: 5px;  font-size: 20px;color: white;"></i></a>   
+                        <a href="https://www.facebook.com/PARTHILSAVALIYA3132/"><i class="fab fa-facebook" style=" padding: 5px;  font-size: 20px;color: white;"></i></a>   
+                        <a href="https://wa.me/+917990553100"><i class="fab fa-whatsapp" style=" padding: 5px;  font-size: 20px;color: white;"></i></a>
+                        <a href="https://www.Telegram.me/Parthil_20"><i class="fab fa-telegram" style=" padding: 5px;  font-size: 20px;color: white;"></i></a>    
+                </div>
+                
+            </div>
+            <style>
+                .form1 a i:hover{
+                    transition: 0.5s;
+                    transform: scale(1.5);
+                }
+            </style>
+        </div><br><br><br><br><br><br><br>
+    <h5 style="color: white;font-size: 60px;text-align: center;font-weight: bolder;"></h5>
+    <button onclick="topFunction()" class="btn-lg" id="myBtn" title="Go to top" ><i class="fa fa-arrow-down"></i></button>
+    <Footer style="background-color: transparent;text-align: center ;">
+            <div class="ft1">
+                <h3 class="ft2" style="color: white; font-weight: bolder;">All Rights Are Reserved By Developer</h3>
+                <h4 class="ft3" style="color: white;font-weight: bold;font-family: cursive;">Made By <a href="#about" style="color: gold;font-family: cursive;">PaRthil Savaliya</a></h4>
+            </div>
+    </Footer>
+    </section>
+    <style>
+        /* #myBtn{
+                box-sizing: border-box;
+                width: 1%;  
+                clip-path: circle();
+            } */
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 10px;
+                z-index: 99;
+                border: none;
+                outline: none;
+                color: black;
+                background-color: white;
+                cursor: pointer;
+                box-sizing: border-box;
+                width: 20%; 
+                clip-path: circle();
+                padding: 15px;
+            }
+            #myBtn:hover{
+                background-color: gold;
+            }
+        
+    </style>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+#project{
+  height: 250vh;
+  background-color: black;
+}
+@media screen and (max-width:668px) {
+  #project{
+    height: 70vh;
+  }
+}
