@@ -9,7 +9,7 @@ $msg= $_POST['msg'];
 $to = "parthilsavaliya3132@gmail.com";
 $subject = "parthil's personalblog client details";
 $txt ="fName = ". $fname . "\r\n lName = ". $lname . "\r\n Email = " . $email . "\r\n mno = ". $mno . "\r\n Message =" . $message;
-$headers = "name = " . $fname . "\r\n email = " .$email;
+$headers = "name = " . $fname . "\r\n email = " . $email;
 //"CC: somebodyelse@example.com";
 if(empty($email)){
     echo "please enter email address";
